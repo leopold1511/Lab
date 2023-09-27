@@ -81,10 +81,8 @@ public class Resident {
         double sum = 0;
         int[] k = new int[2];
         k = monthDetector(month);
-
-
         for (int i = k[0]; i <= k[1]; i++) {
-            sum += energy[k[0]];
+            sum += energy[i];
         }
         return sum;
     }
